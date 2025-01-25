@@ -1,0 +1,6 @@
+# Ignore the entire .streamlit folder
+.streamlit/
+
+# Streamlit cache (or any other Python caches)
+.cache/
+__pycache__/
