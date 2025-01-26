@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 st.title("COCo AI Genie 💡")
-st.info("A chatbot that can help you yo navigate the legal intricacies of nonprofits and community groups in Quebec", icon="ℹ️")
+st.info("A chatbot that can help you to navigate the legal intricacies of nonprofits and community groups in Quebec", icon="ℹ️")
 st.warning("I do not provide legal advice. If you need legal assistance, please contact us at info@coco-net.org for a referral to a lawyer or legal clinic.", icon="⚠️")
 
 # Initialize the conversation messages if not already set
