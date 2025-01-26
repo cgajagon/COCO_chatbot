@@ -16,8 +16,9 @@ st.title("COCo AI Genie 💡")
 st.info("A chatbot that can help you to navigate the legal intricacies of nonprofits and community groups in Quebec", icon="ℹ️")
 st.warning("I do not provide legal advice. If you need legal assistance, please contact us at info@coco-net.org for a referral to a lawyer or legal clinic.", icon="⚠️")
 
-# Initialize the DB (creates the file and table if not present).
-init_db()
+# Create a connection to the database and initialize the DB (creates the file and table if not present)
+conn = st.connection('sessions_db', type='sql')
+init_db(conn)
 
 # Initialize and generate a random user_id.
 if "user_id" not in st.session_state:
@@ -62,7 +63,7 @@ if "conversation_end" not in st.session_state:
             st.session_state.conversation_end = True
             # Save the session state to the database
             session_dict = dict(st.session_state)
-            save_state_to_db(st.session_state.user_id, session_dict)
+            save_state_to_db(conn, st.session_state.user_id, session_dict)
             time.sleep(1)
             st.rerun()
 
@@ -78,7 +79,7 @@ else:  # Feedback flow
                     "selected": sentiment_mapping[selected], "reason": reason}
             # Save the session state to the database
             session_dict = dict(st.session_state)
-            save_state_to_db(st.session_state.user_id, session_dict)
+            save_state_to_db(conn, st.session_state.user_id, session_dict)
             st.rerun()
 
     if "vote" not in st.session_state:

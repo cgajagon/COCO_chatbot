@@ -1,6 +1,16 @@
 # Ignore the entire .streamlit folder
 .streamlit/
 
+# ignore dev database
+*.db
+.csv
+
+# ignore test data
+data/dev/
+
 # Streamlit cache (or any other Python caches)
 .cache/
 __pycache__/
+
+# Ignore virtual environment
+.venv_chatbot/
