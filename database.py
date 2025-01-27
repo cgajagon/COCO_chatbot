@@ -21,6 +21,8 @@ def init_db(conn):
             )
         )
 
+        s.commit()
+
 
 def load_state_from_db(conn, user_id="default_user"):
     """
