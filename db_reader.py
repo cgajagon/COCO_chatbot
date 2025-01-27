@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 
 # 1. Connect to SQLite database
-connection = sqlite3.connect("coco_chat_queries.db")
+connection = sqlite3.connect("sessions.db")
 
 # 2. Write a query to select the data you want
 query = """
@@ -18,3 +18,5 @@ connection.close()
 
 # Inspect the first few rows
 df.to_csv('user_state.csv', index=False)
+
+print(df.head())

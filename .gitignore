@@ -6,7 +6,7 @@
 .csv
 
 # ignore test data
-data/dev/
+data/
 
 # Streamlit cache (or any other Python caches)
 .cache/
@@ -14,3 +14,6 @@ __pycache__/
 
 # Ignore virtual environment
 .venv_chatbot/
+
+# Ignore service account credentials
+service_account.json

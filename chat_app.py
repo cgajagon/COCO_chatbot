@@ -16,7 +16,7 @@ st.title("COCo AI Genie 💡")
 st.info("A chatbot that can help you to navigate the legal intricacies of nonprofits and community groups in Quebec", icon="ℹ️")
 st.warning("I do not provide legal advice. If you need legal assistance, please contact us at info@coco-net.org for a referral to a lawyer or legal clinic.", icon="⚠️")
 
-# Create a connection to the database and initialize the DB (creates the file and table if not present)
+# Initialize the DB (creates the file and table if not present) and create a connection
 conn = st.connection('sessions_db', type='sql')
 init_db(conn)
 
