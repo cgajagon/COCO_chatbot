@@ -374,7 +374,6 @@ query_engine_tools = [
                 "Explains the distinction between incorporation and charitable status, emphasizing that incorporation provides a legal structure for the organization to operate independently, while charitable status entails tax benefits and additional requirements."
                 "Provides guidance on the incorporation process, detailing the legal obligations for provincially incorporated nonprofits, including governance, bylaws, annual meetings, and compliance with filing requirements."
                 "Compares provincial and federal incorporation, discussing key differences such as board member requirements, financial obligations, and dual registration for federally incorporated nonprofits operating in Quebec."
-                "Provides step-by-step instructions for incorporating at both provincial and federal levels, underscoring the importance of aligning incorporation documents with charitable status eligibility."
                 "Use a detailed plain text question as input to the tool."
             ),
         ),
@@ -401,7 +400,6 @@ query_engine_tools = [
                 "Explains the purpose of bylaws as guiding rules that govern organizational operations, ensuring fairness, transparency, and consistency."
                 "Provides recommendations for drafting clear and inclusive bylaws, avoiding ambiguity, and involving multiple contributors in the process."
                 "Explains the process for modifying bylaws at general meetings, and the distinction between bylaws and letters patent."
-                "Explains the importance of making bylaws accessible to staff and members and integrating them into daily operations to prevent conflicts."
                 "Use a detailed plain text question as input to the tool."
             ),
         ),
@@ -415,8 +413,6 @@ query_engine_tools = [
                 "Explains accounting practices, including documenting all financial transactions, using accrual accounting, implementing double-entry bookkeeping, and maintaining a detailed chart of accounts."
                 "Explains the importance of producing financial statements, recognizing revenue appropriately, recording capital assets, and adhering to government regulations."
                 "Provides recommendations about internal controls such as budgeting, segregation of financial duties, and policies for petty cash management."
-                "Advises against lending money to staff or board members and underscores compliance with charitable status and tax filing requirements."
-                "Promote sound financial management and transparency in nonprofit organizations."
                 "Use a detailed plain text question as input to the tool."
             ),
         ),
@@ -431,7 +427,6 @@ query_engine_tools = [
                 "Explains the distinction between nonprofit incorporation and charitable status, highlights the benefits of being a registered charity, and outlines the compliance requirements to maintain charitable status."
                 "Explains that only non-partisan activities directly tied to a charity's purpose are allowed within specific resource limits (commonly referred to as the '10% Rule')."
                 "Explains exceptions, advocacy activities considered charitable, and criticisms of political activity limitations."
-                "Proivide updates on government consultations and resources for further clarification on CRA regulations."
                 "Use a detailed plain text question as input to the tool."
             ),
         ),
