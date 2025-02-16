@@ -6,7 +6,7 @@
 .csv
 
 # ignore test data
-data/
+data/dev/
 
 # Streamlit cache (or any other Python caches)
 .cache/
