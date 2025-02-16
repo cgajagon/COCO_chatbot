@@ -2,7 +2,7 @@ import streamlit as st
 import time
 import uuid
 
-from chat_engine import stream_data
+from chat_agent import stream_data
 from database import init_db, save_state_to_db
 
 
