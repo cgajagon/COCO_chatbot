@@ -19,8 +19,6 @@ def init_db(conn):
                 """
             )
         )
-    s.commit()
-
         s.commit()
 
 
