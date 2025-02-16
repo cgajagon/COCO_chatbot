@@ -15,7 +15,7 @@ from llama_index.core.memory import ChatMemoryBuffer
 import streamlit as st
 
 api_key = st.secrets["OPENAI_API_KEY"]
-is_prod = True
+is_prod = False
 
 if is_prod is True:
     directory = "./data/prod"

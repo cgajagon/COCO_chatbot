@@ -1,10 +1,7 @@
-import os
-
 from llama_index.core.extractors import (
     SummaryExtractor,
     QuestionsAnsweredExtractor,
 )
-from llama_index.core.ingestion import IngestionPipeline
 from llama_index.core.schema import MetadataMode
 from llama_index.core.node_parser import TokenTextSplitter
 from llama_index.agent.openai import OpenAIAgent
@@ -20,7 +17,6 @@ from llama_index.core.indices.query.query_transform import HyDEQueryTransform
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.llms.openai import OpenAI
 from llama_index.core.memory import ChatMemoryBuffer
-from llama_index.core import PromptTemplate
 
 import streamlit as st
 
@@ -224,3 +220,11 @@ agent = OpenAIAgent.from_tools(
     ),
     verbose=True,
 )
+
+# Stream data from the agent
+
+
+def stream_data(prompt):
+    streaming_response = agent.stream_chat(prompt)
+    for word in streaming_response.response_gen:
+        yield word

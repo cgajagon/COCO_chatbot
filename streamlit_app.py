@@ -1,9 +1,6 @@
 import streamlit as st
 from time import sleep
 
-from database import init_db, load_state_from_db, save_state_to_db
-
-
 # Set the page title and icon
 st.set_page_config(
     page_title="COCo AI Genie",
