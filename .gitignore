@@ -15,9 +15,5 @@ __pycache__/
 # Ignore virtual environment
 .venv_chatbot/
 
-<<<<<<< HEAD
 # Ignore virtual environment
-=======
-# Ignore service account credentials
->>>>>>> Development
 service_account.json
